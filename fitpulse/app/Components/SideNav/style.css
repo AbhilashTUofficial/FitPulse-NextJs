@@ -1,0 +1,51 @@
+.navBarCont{
+    background-color: var(--secondary-black);
+    color: var(--secondary-white);
+}
+
+.logo{
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 20px;
+}
+.btn {
+  position: relative;
+  background-color: var(--secondary-white);
+  color: var(--primary-black);
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  overflow: hidden; /* clip left side overflow */
+  transition: width 0.3s ease-in-out;
+}
+
+.btn:hover {
+  width: 120px;
+}
+
+.btnHover {
+  position: absolute;
+  top: 0;
+  left: 100%; /* start at the right edge of .btn */
+  height: 30px;
+  width: 0;
+  background-color: var(--secondary-white);
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+}
+
+.btn:hover .btnHover {
+  width: 60px; /* expands only to the right */
+}
+
+.logOutBtn{
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 20px;
+}
