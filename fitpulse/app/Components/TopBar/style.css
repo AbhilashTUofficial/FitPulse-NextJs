@@ -1,3 +1,101 @@
 .topBarCont{
     width: 100%;
+    background-color: var(--primary-black);
+    color: var(--secondary-white);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs{
+    background-color: var(--secondary-black);
+    color: var(--secondary-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 42px;
+    border-radius: 30px;
+}
+.tab{
+    background-color: var(--secondary-black);
+    color: var(--secondary-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 42px;
+    border-radius: 30px;
+}
+.icon{
+    background-color: var(--secondary-white);
+    width:18px;
+    height: 18px;
+    border-radius: 50px;
+    margin: 0px 5px;
+}
+.tab:active{
+    background-color: var(--primary-white);
+    color: var(--secondary-black);
+}
+
+.actionBtn{
+    padding: 0;
+    margin:0px 5px; 
+    border-radius: 30px;
+    transition: 100 0.3s ease-in-out;
+    height: 42px;
+    min-width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-black);
+
+}
+.themeBtn{
+    background-color: var(--secondary-black);
+    width:84px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.themeBtn:hover{
+    justify-content: flex-end;
+}
+.themeThumb{
+    background-color: var(--secondary-white);
+    width:38px;
+    height: 38px;
+    border-radius: 50px;
+}
+.notif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.profilePic{
+    background-color: var(--secondary-white);
+    width:38px;
+    height: 38px;
+    border-radius: 50px;
+}
+.profile{
+    width: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dropBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:2px;
+}
+.dropBtn:hover{
+    background-color: var(--secondary-white);
+    color: var(--secondary-black);
+    opacity: 0.2;
 }

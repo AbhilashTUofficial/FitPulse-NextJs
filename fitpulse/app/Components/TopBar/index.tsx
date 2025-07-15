@@ -4,15 +4,34 @@ export default function TopBar() {
     return (
         <div className=" topBarCont flex justify-between align-center  h-20 p-1 bg-amber-400 sticky top-0">
             <div className="tabs flex items-center md:justify-start justify-center w-full">
-                <div className="tab1 p-2">Home</div>
-                <div className="tab2 p-2">Actions</div>
-                <div className="tab3 p-2">Sleep</div>
-                <div className="tab4 p-2">Calories</div>
+                <div className="tab p-2">
+                    <div className="icon"></div>
+                    <span>Home</span>
+                </div>
+                <div className="tab p-2">
+                    <div className="icon"></div>
+                    <span>Actions</span>
+                </div>
+                <div className="tab p-2">
+                    <div className="icon"></div>
+                    <span>Sleep</span>
+                </div>
+                <div className="tab p-2">
+                    <div className="icon"></div>
+                    <span>Calories</span>
+                </div>
             </div>
             <div className="actions hidden md:flex items-center">
-                <div className="themeSwitch p-2">Theme</div>
-                <div className="notif p-2">N</div>
-                <div className="profile p-2">P</div>
+                <div className="themeSwitch actionBtn themeBtn p-2">
+                    <div className="themeThumb"></div>
+                </div>
+                <div className="notif actionBtn">
+                    <div className="icon"></div>
+                </div>
+                <div className="profile actionBtn p-2">
+                    <div className="profilePic"></div>
+                    <div className="dropBtn">v</div>
+                </div>
             </div>
 
         </div>
