@@ -8,20 +8,27 @@ import HealthTracker from "@/app/Components/HealthTracker";
 import CaloriesAnalysis from "@/app/Components/CaloriesAnalysis";
 export default function Dashboard() {
     return (
-        <div className="flex w-screen">
+        <div className="flex w-screenn bg-[var(--secondary-black)] ">
             <NavBar />
-            <div className=" flex flex-col w-full p-2">
+            <div className=" flex flex-col w-full p-2 bg-[var(--primary-black)] rounded-l-2xl">
                 <TopBar />
-                <div className="p-0 m-0 h-full ">
-                    <div className="content bg-green-400 flex flex-1  flex-col h-full">
-                        <div className="titleCont hidden  md:flex justify-between items-center bg-cyan-400-400 h-20 p-2 bg-green-600">
-                            <div className="hello">
+                <div className="p-0 m-0 h-full">
+                    <div className="conten flex flex-1  flex-col h-full rounded-lg">
+                        <div className="titleCont hidden  md:flex justify-between items-center bg-cyan-400-400 h-20">
+                            <div className="hello font-bold font-sans text-2xl">
                                 Hello, Anna
                             </div>
                             <div className="actionsBtns flex">
-                                <div className="searchBarCont p-2">S</div>
-                                <div className="calendarCont p-2">C</div>
-                                <div className="aiBtn p-2">A</div>
+                                <div className="actionBtn searchBarCont p-2">
+                                    <div className="icon"></div>
+                                </div>
+                                <div className="actionBtn calendarBtn text-sm p-2">
+                                    <div className="icon"></div>
+                                    Calendar
+                                </div>
+                                <div className="actionBtn aiBtn p-2">
+                                    <div className="icon"></div>
+                                    Chat with Ai</div>
                             </div>
                         </div>
                         <div className="main flex flex-1 flex-col md:flex-row">
